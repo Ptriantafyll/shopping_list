@@ -125,6 +125,13 @@ class _NewItemState extends State<NewItem> {
                   TextButton(
                     onPressed: () {
                       _formKey.currentState!.reset();
+                      Navigator.pop(context);
+                    },
+                    child: const Text('Cancel'),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      _formKey.currentState!.reset();
                     },
                     child: const Text('Reset'),
                   ),
